@@ -3,7 +3,7 @@
 namespace BaseApplication\Form;
 
 use RuntimeException;
-use Zend\Form\Form;
+use Laminas\Form\Form;
 
 /**
  * Trait SubmitFormTrait

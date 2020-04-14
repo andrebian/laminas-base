@@ -7,8 +7,8 @@ use BaseApplication\Entity\ApplicationEntityInterface;
 use DateTime;
 use Doctrine\ORM\EntityManager;
 use Exception;
-use Zend\Hydrator\ClassMethods;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\Hydrator\ClassMethods;
+use Laminas\ServiceManager\ServiceManager;
 
 /**
  * Class BaseService

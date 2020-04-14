@@ -4,7 +4,7 @@ namespace BaseApplication\View\Helper;
 
 use User\Assets\SessionNamespace;
 use User\Helper\UserIdentity;
-use Zend\View\Helper\AbstractHelper;
+use Laminas\View\Helper\AbstractHelper;
 
 /**
  * Class AuthUserViewHelper

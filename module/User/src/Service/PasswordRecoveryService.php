@@ -7,7 +7,7 @@ use DateTime;
 use Doctrine\ORM\EntityManager;
 use User\Entity\PasswordRecoveryToken;
 use User\Entity\User;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 
 /**
  * Class PasswordRecoveryService

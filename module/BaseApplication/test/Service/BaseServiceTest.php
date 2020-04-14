@@ -7,7 +7,7 @@ use Mockery;
 use PHPUnit\Framework\TestCase;
 use Test\BaseApplication\Service\Dummy\DummyEntity;
 use Test\BaseApplication\Service\Dummy\DummyService;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 
 /**
  * Class BaseServiceTest

@@ -7,10 +7,10 @@ use User\Assets\SessionNamespace;
 use User\Auth\Adapter;
 use User\Form\Login;
 use User\Service\UserService;
-use Zend\Authentication\AuthenticationService;
-use Zend\Authentication\Storage\Session as SessionStorage;
-use Zend\Http\Request;
-use Zend\View\Model\ViewModel;
+use Laminas\Authentication\AuthenticationService;
+use Laminas\Authentication\Storage\Session as SessionStorage;
+use Laminas\Http\Request;
+use Laminas\View\Model\ViewModel;
 
 /**
  * Class AuthController
@@ -19,7 +19,7 @@ use Zend\View\Model\ViewModel;
 class AuthController extends BaseController
 {
     /**
-     * @return \Zend\Http\Response|ViewModel
+     * @return \Laminas\Http\Response|ViewModel
      * @throws \Doctrine\ORM\ORMException
      * @throws \Doctrine\ORM\OptimisticLockException
      * @throws \Doctrine\ORM\TransactionRequiredException
@@ -77,7 +77,7 @@ class AuthController extends BaseController
     }
 
     /**
-     * @return \Zend\Http\Response
+     * @return \Laminas\Http\Response
      */
     public function logoutAction()
     {

@@ -2,8 +2,8 @@
 
 namespace BaseApplication\RequestLog;
 
-use Zend\Db\Adapter\Adapter;
-use Zend\Mvc\MvcEvent;
+use Laminas\Db\Adapter\Adapter;
+use Laminas\Mvc\MvcEvent;
 
 /**
  * Trait RequestLogTrait

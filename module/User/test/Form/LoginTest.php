@@ -10,7 +10,7 @@ namespace Test\User\Form;
 
 use PHPUnit\Framework\TestCase;
 use User\Form\Login;
-use Zend\Form\Form;
+use Laminas\Form\Form;
 
 /**
  * Class LoginTest
@@ -63,7 +63,7 @@ class LoginTest extends TestCase
     /**
      * @test
      */
-    public function classIsASubClassOfZendForm()
+    public function classIsASubClassOfLaminasForm()
     {
         $class = class_parents($this->form);
         $formExtendsOf = current($class);

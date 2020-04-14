@@ -2,7 +2,7 @@
 
 namespace BaseApplication\Controller;
 
-use Zend\Mvc\Controller\AbstractActionController;
+use Laminas\Mvc\Controller\AbstractActionController;
 
 /**
  * Class BaseController
@@ -12,7 +12,7 @@ use Zend\Mvc\Controller\AbstractActionController;
 abstract class BaseController extends AbstractActionController
 {
     /**
-     * @return \Zend\ServiceManager\ServiceLocatorInterface
+     * @return \Laminas\ServiceManager\ServiceLocatorInterface
      */
     protected function getServiceManager()
     {

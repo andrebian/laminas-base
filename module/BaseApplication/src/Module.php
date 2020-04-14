@@ -16,16 +16,16 @@ use BaseApplication\View\Helper\S3ViewHelper;
 use BaseApplication\View\Helper\SlugifyViewHelper;
 use Exception;
 use Traversable;
-use Zend\Cache\StorageFactory;
-use Zend\Mail\Transport\Sendmail;
-use Zend\ModuleManager\Feature\ConfigProviderInterface;
-use Zend\ModuleManager\Feature\InitProviderInterface;
-use Zend\ModuleManager\Feature\ServiceProviderInterface;
-use Zend\ModuleManager\Feature\ViewHelperProviderInterface;
-use Zend\ModuleManager\ModuleManagerInterface;
-use Zend\ServiceManager\Config;
-use Zend\ServiceManager\ServiceManager;
-use Zend\View\Renderer\PhpRenderer;
+use Laminas\Cache\StorageFactory;
+use Laminas\Mail\Transport\Sendmail;
+use Laminas\ModuleManager\Feature\ConfigProviderInterface;
+use Laminas\ModuleManager\Feature\InitProviderInterface;
+use Laminas\ModuleManager\Feature\ServiceProviderInterface;
+use Laminas\ModuleManager\Feature\ViewHelperProviderInterface;
+use Laminas\ModuleManager\ModuleManagerInterface;
+use Laminas\ServiceManager\Config;
+use Laminas\ServiceManager\ServiceManager;
+use Laminas\View\Renderer\PhpRenderer;
 
 /**
  * Class Module
@@ -49,7 +49,7 @@ class Module implements
     }
 
     /**
-     * Expected to return \Zend\ServiceManager\Config object or array to
+     * Expected to return \Laminas\ServiceManager\Config object or array to
      * seed such an object.
      *
      * @return array|Config
@@ -130,7 +130,7 @@ class Module implements
     }
 
     /**
-     * Expected to return \Zend\ServiceManager\Config object or array to
+     * Expected to return \Laminas\ServiceManager\Config object or array to
      * seed such an object.
      *
      * @return array|Config

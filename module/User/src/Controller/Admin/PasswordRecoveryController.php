@@ -7,8 +7,8 @@ use DateTime;
 use Doctrine\ORM\EntityManager;
 use User\Entity\PasswordRecoveryToken;
 use User\Service\PasswordRecoveryService;
-use Zend\Http\Request;
-use Zend\View\Model\ViewModel;
+use Laminas\Http\Request;
+use Laminas\View\Model\ViewModel;
 
 /**
  * Class PasswordRecoveryController
@@ -17,7 +17,7 @@ use Zend\View\Model\ViewModel;
 class PasswordRecoveryController extends BaseController
 {
     /**
-     * @return \Zend\Http\Response|ViewModel
+     * @return \Laminas\Http\Response|ViewModel
      * @throws \Doctrine\ORM\ORMException
      * @throws \Doctrine\ORM\OptimisticLockException
      */
@@ -52,7 +52,7 @@ class PasswordRecoveryController extends BaseController
     }
 
     /**
-     * @return \Zend\Http\Response|ViewModel
+     * @return \Laminas\Http\Response|ViewModel
      * @throws \Psr\Container\ContainerExceptionInterface
      * @throws \Psr\Container\NotFoundExceptionInterface
      * @throws \Exception

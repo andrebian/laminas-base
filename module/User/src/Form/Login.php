@@ -2,10 +2,10 @@
 
 namespace User\Form;
 
-use Zend\Form\Element\Email;
-use Zend\Form\Element\Password;
-use Zend\Form\Element\Submit;
-use Zend\Form\Form;
+use Laminas\Form\Element\Email;
+use Laminas\Form\Element\Password;
+use Laminas\Form\Element\Submit;
+use Laminas\Form\Form;
 
 /**
  * Class Login

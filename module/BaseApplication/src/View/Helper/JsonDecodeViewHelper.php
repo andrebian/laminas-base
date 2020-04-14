@@ -2,7 +2,7 @@
 
 namespace BaseApplication\View\Helper;
 
-use Zend\View\Helper\AbstractHelper;
+use Laminas\View\Helper\AbstractHelper;
 
 /**
  * A JSON decoder to use with Twig Templates

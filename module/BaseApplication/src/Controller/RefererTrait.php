@@ -3,7 +3,7 @@
 namespace BaseApplication\Controller;
 
 use RuntimeException;
-use Zend\Uri\Http;
+use Laminas\Uri\Http;
 
 /**
  * Trait RefererTrait

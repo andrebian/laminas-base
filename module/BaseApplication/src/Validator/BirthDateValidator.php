@@ -10,7 +10,7 @@ namespace BaseApplication\Validator;
 
 use DateInterval;
 use DateTime;
-use Zend\Validator\AbstractValidator;
+use Laminas\Validator\AbstractValidator;
 
 /**
  * Class BirthDateValidator

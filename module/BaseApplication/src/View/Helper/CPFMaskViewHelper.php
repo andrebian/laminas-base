@@ -9,7 +9,7 @@
 namespace BaseApplication\View\Helper;
 
 use BaseApplication\Filter\CPFMaskFilter;
-use Zend\View\Helper\AbstractHelper;
+use Laminas\View\Helper\AbstractHelper;
 
 class CPFMaskViewHelper extends AbstractHelper
 {

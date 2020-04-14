@@ -2,9 +2,9 @@
 
 namespace BaseApplication\Assets\Form;
 
-use Zend\Filter\StringTrim;
-use Zend\Filter\StripTags;
-use Zend\Validator\StringLength;
+use Laminas\Filter\StringTrim;
+use Laminas\Filter\StripTags;
+use Laminas\Validator\StringLength;
 
 /**
  * Class FormFilterName

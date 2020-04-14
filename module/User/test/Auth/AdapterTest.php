@@ -13,7 +13,7 @@ use Mockery;
 use PHPUnit\Framework\TestCase;
 use User\Auth\Adapter;
 use User\Entity\User;
-use Zend\Authentication\Result;
+use Laminas\Authentication\Result;
 
 /**
  * Class AdapterTest

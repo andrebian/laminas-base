@@ -2,7 +2,7 @@
 
 namespace BaseApplication\Validator;
 
-use Zend\Validator\AbstractValidator;
+use Laminas\Validator\AbstractValidator;
 
 /**
  * Class InRange

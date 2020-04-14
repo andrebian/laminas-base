@@ -11,13 +11,13 @@ use User\Service\UserService;
 use User\View\Helper\ProfilePictureViewHelper;
 use User\View\Helper\ProfilePictureViewHelperFactory;
 use User\View\Helper\UserIdentityViewHelper;
-use Zend\Authentication\AuthenticationService;
-use Zend\Authentication\Storage\Session;
-use Zend\ModuleManager\Feature\DependencyIndicatorInterface;
-use Zend\ModuleManager\ModuleManager;
-use Zend\Mvc\Controller\AbstractActionController;
-use Zend\Mvc\MvcEvent;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\Authentication\AuthenticationService;
+use Laminas\Authentication\Storage\Session;
+use Laminas\ModuleManager\Feature\DependencyIndicatorInterface;
+use Laminas\ModuleManager\ModuleManager;
+use Laminas\Mvc\Controller\AbstractActionController;
+use Laminas\Mvc\MvcEvent;
+use Laminas\ServiceManager\ServiceManager;
 
 /**
  * Class Module

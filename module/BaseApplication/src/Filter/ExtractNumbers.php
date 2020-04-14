@@ -2,7 +2,7 @@
 
 namespace BaseApplication\Filter;
 
-use Zend\Filter\FilterInterface;
+use Laminas\Filter\FilterInterface;
 
 /**
  * Class ExtractNumbers

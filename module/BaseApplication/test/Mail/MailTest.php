@@ -6,7 +6,7 @@ use BaseApplication\Mail\Mail;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 use User\Entity\User;
-use Zend\View\Renderer\PhpRenderer;
+use Laminas\View\Renderer\PhpRenderer;
 
 /**
  * Class MailTest
@@ -39,7 +39,7 @@ class MailTest extends TestCase
     public function getTransport()
     {
         $mockery = new Mockery();
-        $transport = $mockery->mock('Zend\Mail\Transport\Smtp');
+        $transport = $mockery->mock('Laminas\Mail\Transport\Smtp');
         $transport->shouldReceive('send')->andReturn($transport);
 
         return $transport;
@@ -180,7 +180,7 @@ class MailTest extends TestCase
     public function checkSendFail()
     {
         $mockery = new Mockery();
-        $transport = $mockery->mock('Zend\Mail\Transport\Smtp');
+        $transport = $mockery->mock('Laminas\Mail\Transport\Smtp');
 
         $mail = new Mail($transport, $this->getConfig(), $this->getView());
         $result = $mail->send();

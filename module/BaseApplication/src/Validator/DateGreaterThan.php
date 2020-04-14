@@ -5,9 +5,9 @@ namespace BaseApplication\Validator;
 use ArrayAccess;
 use BaseApplication\Filter\ToDateTime;
 use Traversable;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Validator\AbstractValidator;
-use Zend\Validator\Exception;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Validator\AbstractValidator;
+use Laminas\Validator\Exception;
 
 /**
  * Class DateGreaterThan

@@ -2,7 +2,7 @@
 
 namespace BaseApplication\Controller;
 
-use Zend\Mvc\Controller\AbstractRestfulController;
+use Laminas\Mvc\Controller\AbstractRestfulController;
 
 /**
  * Class ApiController
@@ -12,7 +12,7 @@ use Zend\Mvc\Controller\AbstractRestfulController;
 class ApiController extends AbstractRestfulController
 {
     /**
-     * @return \Zend\ServiceManager\ServiceLocatorInterface
+     * @return \Laminas\ServiceManager\ServiceLocatorInterface
      */
     protected function getServiceManager()
     {

@@ -6,9 +6,9 @@ use Doctrine\ORM\EntityManager;
 use User\Assets\SessionNamespace;
 use User\Entity\User;
 use User\Repository\UserRepository;
-use Zend\Authentication\Adapter\AdapterInterface;
-use Zend\Authentication\Result;
-use Zend\Session\Container;
+use Laminas\Authentication\Adapter\AdapterInterface;
+use Laminas\Authentication\Result;
+use Laminas\Session\Container;
 
 /**
  * Class Adapter

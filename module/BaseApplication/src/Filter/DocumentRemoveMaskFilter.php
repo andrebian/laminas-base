@@ -2,7 +2,7 @@
 
 namespace BaseApplication\Filter;
 
-use Zend\Filter\AbstractFilter;
+use Laminas\Filter\AbstractFilter;
 
 /**
  * Class DocumentRemoveMaskFilter

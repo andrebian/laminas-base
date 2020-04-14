@@ -8,9 +8,9 @@ use User\Controller\Admin\PasswordRecoveryController as AdminPasswordRecoveryCon
 use User\Controller\Admin\UserController as AdminUserController;
 use User\Controller\AuthController;
 use User\Controller\PasswordRecoveryController;
-use Zend\I18n\Translator\TranslatorServiceFactory;
-use Zend\Router\Http\Literal;
-use Zend\Router\Http\Segment;
+use Laminas\I18n\Translator\TranslatorServiceFactory;
+use Laminas\Router\Http\Literal;
+use Laminas\Router\Http\Segment;
 
 $ormCacheEngine = 'array';
 if (defined('ORM_CACHE_ENGINE')) {
@@ -181,8 +181,8 @@ return [
     ],
     'service_manager' => [
         'abstract_factories' => [
-            'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
-            'Zend\Log\LoggerAbstractServiceFactory',
+            'Laminas\Cache\Service\StorageCacheAbstractServiceFactory',
+            'Laminas\Log\LoggerAbstractServiceFactory',
         ],
         'factories' => [
             'translator' => TranslatorServiceFactory::class

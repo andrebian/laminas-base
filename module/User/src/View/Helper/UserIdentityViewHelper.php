@@ -3,7 +3,7 @@
 namespace User\View\Helper;
 
 use User\Helper\UserIdentity;
-use Zend\View\Helper\AbstractHelper;
+use Laminas\View\Helper\AbstractHelper;
 
 /**
  * Class UserIdentity

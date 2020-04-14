@@ -9,7 +9,7 @@ namespace BaseApplication\Controller;
 trait ServiceManagerTrait
 {
     /**
-     * @return \Zend\ServiceManager\ServiceLocatorInterface
+     * @return \Laminas\ServiceManager\ServiceLocatorInterface
      */
     protected function getServiceManager()
     {

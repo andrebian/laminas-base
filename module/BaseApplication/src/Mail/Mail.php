@@ -4,14 +4,14 @@ namespace BaseApplication\Mail;
 
 use Exception;
 use finfo;
-use Zend\Mail\Message;
-use Zend\Mail\Transport\TransportInterface;
-use Zend\Mime\Message as MimeMessage;
-use Zend\Mime\Mime;
-use Zend\Mime\Part as MimePart;
-use Zend\View\Model\ViewModel;
-use Zend\View\Resolver\TemplatePathStack;
-use Zend\View\View;
+use Laminas\Mail\Message;
+use Laminas\Mail\Transport\TransportInterface;
+use Laminas\Mime\Message as MimeMessage;
+use Laminas\Mime\Mime;
+use Laminas\Mime\Part as MimePart;
+use Laminas\View\Model\ViewModel;
+use Laminas\View\Resolver\TemplatePathStack;
+use Laminas\View\View;
 
 /**
  * Class Mail
@@ -186,7 +186,7 @@ class Mail
         $template = "email/{$page}.phtml";
 
         $class = get_class($this->view);
-        if ($class == 'Zend\View\Renderer\PhpRenderer' && $moduleName) {
+        if ($class == 'Laminas\View\Renderer\PhpRenderer' && $moduleName) {
             $templatePath = dirname(dirname(dirname(dirname(__DIR__)))) . '/module/' . ucfirst($moduleName) . '/';
             $templatePath .= 'view/';
 

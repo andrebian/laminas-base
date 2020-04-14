@@ -8,8 +8,8 @@ use User\Controller\Admin\PasswordRecoveryController as AdminPasswordRecoveryCon
 use User\Entity\PasswordRecoveryToken;
 use User\Entity\User;
 use User\Service\PasswordRecoveryService;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 /**
  * Class AdminPasswordRecoveryControllerTest

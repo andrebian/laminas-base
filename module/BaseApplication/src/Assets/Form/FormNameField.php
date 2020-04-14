@@ -2,7 +2,7 @@
 
 namespace BaseApplication\Assets\Form;
 
-use Zend\Form\Element\Text;
+use Laminas\Form\Element\Text;
 
 /**
  * Class FormNameField

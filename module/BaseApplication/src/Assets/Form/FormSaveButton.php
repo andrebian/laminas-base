@@ -2,7 +2,7 @@
 
 namespace BaseApplication\Assets\Form;
 
-use Zend\Form\Element\Submit;
+use Laminas\Form\Element\Submit;
 
 /**
  * Class FormSaveButton

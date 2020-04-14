@@ -9,11 +9,11 @@ use User\Entity\User;
 use User\Form\UserForm;
 use User\Helper\UserIdentity;
 use User\Service\UserService;
-use Zend\Authentication\Storage\Session as SessionStorage;
-use Zend\Http\Request;
-use Zend\Mvc\MvcEvent;
-use Zend\Mvc\Plugin\FlashMessenger\FlashMessenger;
-use Zend\View\Model\ViewModel;
+use Laminas\Authentication\Storage\Session as SessionStorage;
+use Laminas\Http\Request;
+use Laminas\Mvc\MvcEvent;
+use Laminas\Mvc\Plugin\FlashMessenger\FlashMessenger;
+use Laminas\View\Model\ViewModel;
 
 /**
  * Class UserController
@@ -58,7 +58,7 @@ class UserController extends CrudController
 
 
     /**
-     * @return \Zend\Http\Response|ViewModel
+     * @return \Laminas\Http\Response|ViewModel
      * @throws \Doctrine\ORM\ORMException
      * @throws \Doctrine\ORM\OptimisticLockException
      * @throws \Doctrine\ORM\TransactionRequiredException

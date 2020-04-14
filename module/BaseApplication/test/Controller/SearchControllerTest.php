@@ -7,9 +7,9 @@ use BaseApplication\Controller\SearchController;
 use Doctrine\ORM\EntityManager;
 use Exception;
 use Mockery;
-use Zend\ServiceManager\ServiceManager;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
+use Laminas\ServiceManager\ServiceManager;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 /**
  * Class SearchControllerTest

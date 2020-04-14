@@ -7,8 +7,8 @@ use Doctrine\ORM\EntityManager;
 use Mockery;
 use User\Entity\User;
 use User\Service\UserService;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 /**
  * Class IndexControllerTest

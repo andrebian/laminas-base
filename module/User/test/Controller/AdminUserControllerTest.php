@@ -9,8 +9,8 @@
 namespace Test\User\Controller;
 
 use User\Controller\Admin\UserController as AdminUserController;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 /**
  * Class AdminUserControllerTest

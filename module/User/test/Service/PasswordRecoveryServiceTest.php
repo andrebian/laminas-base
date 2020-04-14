@@ -16,7 +16,7 @@ use PHPUnit\Framework\TestCase;
 use User\Entity\PasswordRecoveryToken;
 use User\Entity\User;
 use User\Service\PasswordRecoveryService;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 
 /**
  * Class PasswordRecoveryServiceTest

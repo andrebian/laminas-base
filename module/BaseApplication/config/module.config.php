@@ -6,8 +6,8 @@ use BaseApplication\Controller\AdminIndexController;
 use BaseApplication\Controller\IndexController;
 use BaseApplication\Controller\SearchController;
 use Doctrine\ORM\Mapping\Driver\AnnotationDriver;
-use Zend\Router\Http\Literal;
-use Zend\Router\Http\Segment;
+use Laminas\Router\Http\Literal;
+use Laminas\Router\Http\Segment;
 
 $ormCacheEngine = 'array';
 if (defined('ORM_CACHE_ENGINE')) {

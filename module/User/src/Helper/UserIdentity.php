@@ -2,8 +2,8 @@
 
 namespace User\Helper;
 
-use Zend\Authentication\AuthenticationService;
-use Zend\Authentication\Storage\Session as SessionStorage;
+use Laminas\Authentication\AuthenticationService;
+use Laminas\Authentication\Storage\Session as SessionStorage;
 
 /**
  * Class UserIdentity

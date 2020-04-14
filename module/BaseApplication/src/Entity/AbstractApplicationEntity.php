@@ -4,7 +4,7 @@ namespace BaseApplication\Entity;
 
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;
-use Zend\Hydrator\ClassMethods;
+use Laminas\Hydrator\ClassMethods;
 
 /**
  * Class AbstractApplicationEntity

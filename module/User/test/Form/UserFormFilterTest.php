@@ -4,7 +4,7 @@ namespace User\Form;
 
 use Exception;
 use PHPUnit\Framework\TestCase;
-use Zend\InputFilter\BaseInputFilter;
+use Laminas\InputFilter\BaseInputFilter;
 
 /**
  * Class UserFormFilterTest

@@ -7,8 +7,8 @@ use Coordenador\Entity\Coordenador;
 use Professor\Entity\Professor;
 use User\Entity\User;
 use User\Helper\UserIdentity;
-use Zend\ServiceManager\ServiceLocatorInterface;
-use Zend\View\Helper\AbstractHelper;
+use Laminas\ServiceManager\ServiceLocatorInterface;
+use Laminas\View\Helper\AbstractHelper;
 
 /**
  * Class ProfilePictureViewHelper

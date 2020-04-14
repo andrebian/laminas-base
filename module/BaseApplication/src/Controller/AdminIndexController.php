@@ -8,7 +8,7 @@
 
 namespace BaseApplication\Controller;
 
-use Zend\Mvc\Controller\AbstractActionController;
+use Laminas\Mvc\Controller\AbstractActionController;
 
 /**
  * Class AdminIndexController

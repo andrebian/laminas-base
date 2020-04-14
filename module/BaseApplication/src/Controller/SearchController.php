@@ -5,7 +5,7 @@ namespace BaseApplication\Controller;
 use BaseApplication\Repository\ApplicationRepositoryInterface;
 use Doctrine\ORM\EntityManager;
 use Exception;
-use Zend\View\Model\ViewModel;
+use Laminas\View\Model\ViewModel;
 
 /**
  * Class SearchController

@@ -3,7 +3,7 @@
 namespace BaseApplication\View\Helper;
 
 use Slug\Slugifier;
-use Zend\View\Helper\AbstractHelper;
+use Laminas\View\Helper\AbstractHelper;
 
 /**
  * Class Slugify

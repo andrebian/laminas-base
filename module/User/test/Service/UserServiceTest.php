@@ -13,7 +13,7 @@ use Mockery;
 use PHPUnit\Framework\TestCase;
 use User\Entity\User;
 use User\Service\UserService;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 
 /**
  * Class UserServiceTest

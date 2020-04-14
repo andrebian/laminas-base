@@ -8,7 +8,7 @@
 
 namespace BaseApplication\Entity;
 
-use Zend\Hydrator\ClassMethods;
+use Laminas\Hydrator\ClassMethods;
 
 /**
  * Trait ToArrayTrait
