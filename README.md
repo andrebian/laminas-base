@@ -1,13 +1,13 @@
-# ZF Base
+# Laminas Base
 
-A Zend Framework Bootstrap Application for multipurpose applications.
+A Laminas bootstrap application for multipurpose applications.
 
 ## 1 - Installing
 
 ### 1.1 - Creating a project with Composer
 
 ```shell
-composer create-project -sdev andrebian-solucoes-web/zf-base path/to/installation
+composer create-project -sdev --no-scripts andrebian/laminas-base path/to/installation
 ```
 
 ### 1.2 - Cloning repository
@@ -18,23 +18,6 @@ Clone this repository and remove the `.git` folder before start to code.
 
 Download the zip file and remove the `.git` folder before start to code.
 
-#### Note
-
-When installing dependencies with composer, some questions will appear.
-
-```shell
- - Installing doctrine/doctrine-module (dev-master 57c0ee9): Cloning 57c0ee9586 from cache
-
-  Please select which config file you wish to inject 'DoctrineModule' into:
-  [0] Do not inject
-  [1] config/development.config.php.dist
-  Make your selection (default is 0):0
-
-  Remember this option for other packages of the same type? (y/N)y
-```
-
-Just select the option "0". All project dependencies are already set in `config/modules.config.php`.
-Then select the option "y" to remember this decision for packages of the same type.
 
 ## 2 - Initializing the application
 
@@ -231,3 +214,5 @@ An e-mail wrapper. Easily send transactional e-mails.
 [MIT](LICENSE)  
  
 ## Contributing
+
+You can contribute with this project by reporting an [issue](https://github.com/andrebian/laminas-base/issues) or making a [pull request](https://github.com/andrebian/laminas-base/pulls).
