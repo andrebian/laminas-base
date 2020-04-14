@@ -19,4 +19,9 @@ return [
     'session' => [
         'lifetime' => 3600 * 8, // Duração de 8h
     ],
+    'db' => [
+        'user' => '',
+        'password' => '',
+        'dsn' => ''
+    ]
 ];
