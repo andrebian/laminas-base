@@ -32,7 +32,7 @@ $modules = [
     'Laminas\Db',
     'Laminas\Router',
     'Laminas\Validator',
-    'Laminas\ZendFrameworkBridge'
+    'Laminas\ZendFrameworkBridge',
     'DoctrineModule',
     'DoctrineORMModule',
     'SendGridTransportModule',
