@@ -7,7 +7,7 @@ A Laminas bootstrap application for multipurpose applications.
 ### 1.1 - Creating a project with Composer
 
 ```shell
-composer create-project -sdev --no-scripts andrebian/laminas-base path/to/installation
+composer create-project -s dev --no-scripts andrebian/laminas-base path/to/installation
 ```
 
 ### 1.2 - Cloning repository
