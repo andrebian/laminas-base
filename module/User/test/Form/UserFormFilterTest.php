@@ -15,13 +15,13 @@ use Laminas\InputFilter\BaseInputFilter;
  */
 class UserFormFilterTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         $this->className = UserFormFilter::class;
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         parent::tearDown();
     }

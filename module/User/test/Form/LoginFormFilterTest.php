@@ -12,13 +12,13 @@ use Laminas\InputFilter\BaseInputFilter;
  */
 class LoginFormFilterTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         $this->className = LoginFormFilter::class;
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         parent::tearDown();
     }

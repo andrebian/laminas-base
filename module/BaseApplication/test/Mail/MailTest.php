@@ -22,13 +22,13 @@ class MailTest extends TestCase
      */
     private $mail;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         $this->mail = new Mail($this->getTransport(), $this->getConfig(), $this->getView());
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         parent::tearDown();
     }

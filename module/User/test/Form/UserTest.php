@@ -24,7 +24,7 @@ class UserTest extends TestCase
     protected $class;
     protected $form;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->class = UserForm::class;
         $this->form = new $this->class();

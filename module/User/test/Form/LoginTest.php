@@ -24,7 +24,7 @@ class LoginTest extends TestCase
     protected $class;
     protected $form;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->class = Login::class;
         $this->form = new $this->class();

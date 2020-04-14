@@ -17,7 +17,7 @@ class BaseServiceTest extends TestCase
 {
     protected $serviceManager;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -36,7 +36,7 @@ class BaseServiceTest extends TestCase
             ->andReturn($entityManager);
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         parent::tearDown();
         $this->serviceManager = null;

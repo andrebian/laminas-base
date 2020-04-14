@@ -19,7 +19,7 @@ use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
  */
 class IndexControllerTest extends AbstractHttpControllerTestCase
 {
-    public function setUp()
+    protected function setUp(): void
     {
         // The module configuration should still be applicable for tests.
         // You can override configuration here with test case specific values,
@@ -55,6 +55,7 @@ class IndexControllerTest extends AbstractHttpControllerTestCase
 
         $serviceManager->setService(UserService::class, $userService);
     }
+
 
     public function testIndexActionCanBeAccessed()
     {

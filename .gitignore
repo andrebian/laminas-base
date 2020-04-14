@@ -20,3 +20,4 @@ fabfile.pyc
 scripts/bake.php
 build/*
 !build/.gitkeep
+.phpunit.result.cache
