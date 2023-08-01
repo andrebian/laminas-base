@@ -5,9 +5,15 @@ namespace BaseApplication;
 use BaseApplication\Controller\AdminIndexController;
 use BaseApplication\Controller\IndexController;
 use BaseApplication\Controller\SearchController;
+use BaseApplication\Mail\Mail;
 use Doctrine\ORM\Mapping\Driver\AnnotationDriver;
+use Exception;
+use Laminas\Mail\Transport\Smtp;
+use Laminas\Mail\Transport\SmtpOptions;
 use Laminas\Router\Http\Literal;
 use Laminas\Router\Http\Segment;
+use Laminas\View\Renderer\PhpRenderer;
+use Psr\Container\ContainerInterface;
 
 $ormCacheEngine = 'array';
 if (defined('ORM_CACHE_ENGINE')) {
@@ -71,13 +77,15 @@ return [
         ]
     ],
     'view_manager' => [
-        'display_not_found_reason' => true,
-        'display_exceptions' => true,
+        'strategies' => [
+            'ViewJsonStrategy',
+        ],
         'doctype' => 'HTML5',
         'not_found_template' => 'error/404',
         'exception_template' => 'error/index',
         'template_map' => [
             'layout/layout' => __DIR__ . '/../view/layout/layout.phtml',
+            'layout/ajax' => __DIR__ . '/../view/layout/ajax.phtml',
             'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
             'error/404' => __DIR__ . '/../view/error/404.phtml',
             'error/index' => __DIR__ . '/../view/error/index.phtml',
@@ -110,6 +118,23 @@ return [
                     __NAMESPACE__ . '\Entity' => __NAMESPACE__ . '_driver'
                 ]
             ]
+        ]
+    ],
+    'service_manager' => [
+        'factories' => [
+            Mail::class => function(ContainerInterface $container) {
+                $smtpConfig = $container->get('config')['email'];
+                $options = new SmtpOptions($smtpConfig);
+                $transport = new Smtp($options);
+
+                try {
+                    $renderer = $container->get('ViewRenderer');
+                } catch (Exception $e) {
+                    $renderer = new PhpRenderer();
+                }
+
+                return new Mail($transport, $smtpConfig, $renderer,  '');
+            }
         ]
     ]
 ];

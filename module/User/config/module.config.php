@@ -86,63 +86,6 @@ return [
                     ],
                 ],
             ],
-
-            // public area
-            'login' => [
-                'type' => Literal::class,
-                'public' => true,
-                'options' => [
-                    'route' => '/login',
-                    'defaults' => [
-                        'controller' => AuthController::class,
-                        'action' => 'index',
-                    ],
-                ],
-            ],
-            'logout' => [
-                'type' => Literal::class,
-                'public' => true,
-                'options' => [
-                    'route' => '/logout',
-                    'defaults' => [
-                        'controller' => AuthController::class,
-                        'action' => 'logout',
-                    ],
-                ],
-            ],
-            'password-recovery' => [
-                'type' => Literal::class,
-                'public' => true,
-                'options' => [
-                    'route' => '/password-recovery',
-                    'defaults' => [
-                        'controller' => PasswordRecoveryController::class,
-                        'action' => 'index',
-                    ],
-                ],
-            ],
-            'recovery-password-action' => [
-                'type' => Literal::class,
-                'public' => true,
-                'options' => [
-                    'route' => '/recovery-password-action',
-                    'defaults' => [
-                        'controller' => PasswordRecoveryController::class,
-                        'action' => 'recoverPassword',
-                    ],
-                ],
-            ],
-            'password-recovery-error' => [
-                'type' => Literal::class,
-                'public' => true,
-                'options' => [
-                    'route' => '/password-recovery-error',
-                    'defaults' => [
-                        'controller' => PasswordRecoveryController::class,
-                        'action' => 'error',
-                    ],
-                ],
-            ],
         ],
     ],
     'controllers' => [

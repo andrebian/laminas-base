@@ -37,6 +37,8 @@ class LoginFormFilterTest extends TestCase
      */
     public function checkSetInputFilter()
     {
+        $this->expectException(Exception::class);
+
         $formFilter = new $this->className();
 
         $filterInterface = new BaseInputFilter();

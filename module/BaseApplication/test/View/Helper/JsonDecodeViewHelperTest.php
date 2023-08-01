@@ -4,6 +4,7 @@ namespace Test\BaseApplication\View\Helper;
 
 use BaseApplication\View\Helper\JsonDecodeViewHelper;
 use PHPUnit\Framework\TestCase;
+use stdClass;
 
 /**
  * Class JsonDecodeViewHelperTest
@@ -20,7 +21,7 @@ class JsonDecodeViewHelperTest extends TestCase
 
         $jsonContent = '{"test": true, "pass": "ok"}';
 
-        $this->assertInternalType('object', $jsonDecodeViewHelper($jsonContent));
-        $this->assertInternalType('array', $jsonDecodeViewHelper($jsonContent, true));
+        $this->assertInstanceOf(stdClass::class, $jsonDecodeViewHelper($jsonContent));
+        $this->assertIsArray($jsonDecodeViewHelper($jsonContent, true));
     }
 }

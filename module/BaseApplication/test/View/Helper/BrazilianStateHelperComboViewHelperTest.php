@@ -18,7 +18,9 @@ class BrazilianStateHelperComboViewHelperTest extends TestCase
     {
         $viewHelper = new BrazilianStateHelperComboViewHelper();
 
-        $this->assertContains('<option', $viewHelper());
-        $this->assertContains('Paraná', $viewHelper());
+        $viewHelperResult = $viewHelper();
+
+        $this->assertStringContainsString('<option', $viewHelperResult);
+        $this->assertStringContainsString('Paraná', $viewHelperResult);
     }
 }

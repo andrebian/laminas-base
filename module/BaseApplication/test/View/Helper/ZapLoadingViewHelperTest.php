@@ -18,6 +18,6 @@ class ZapLoadingViewHelperTest extends TestCase
     {
         $zapLoading = new ZapLoadingViewHelper();
 
-        $this->assertContains('<svg', $zapLoading());
+        $this->assertStringContainsString('<svg', $zapLoading());
     }
 }
