@@ -1,36 +1,53 @@
-version: '3'
 networks:
-  ged_network:
-    name: laminas_network
+    laminas_network:
+        name: laminas_network
 
 services:
-  ged_exp_php:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: laminas_php
-    volumes:
-      - .:/var/www
-    ports:
-      - 8080:80
-    depends_on:
-      - mysql
-    networks:
-      - ged_network
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-  mysql:
-    image: mysql:5.7
-    container_name: laminas_mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: laminas
-      MYSQL_PASSWORD: root
-    ports:
-      - 3307:3306
-    networks:
-      - laminas_network
-    volumes:
-      - mysql_data:/var/lib/mysql
+    laminas_nginx:
+        build:
+            context: ./dockerfiles/nginx
+        container_name: laminas_nginx
+        networks:
+            - laminas_network
+        ports:
+            - "8080:80"
+        volumes:
+            - laminas_nginx_logs:/var/log/nginx
+            - ./public:/var/www/html
+            - ./dockerfiles/nginx/default.conf:/etc/nginx/conf.d/default.conf
+        depends_on:
+            - laminas_php
+
+    laminas_php:
+        build:
+            context: ./dockerfiles/php-fpm
+        container_name: laminas_php
+        networks:
+            - laminas_network
+        environment:
+            XDEBUG_MODE: develop,coverage,debug
+            XDEBUG_CONFIG: client_host=host.docker.internal
+        volumes:
+            - laminas_php_logs:/var/log/php-fpm
+            - ./:/var/www
+            - ./public:/var/www/html
+            - ./dockerfiles/php-fpm/php.ini:/usr/local/etc/php/php.ini
+
+    mysql:
+        image: mysql:5.7
+        container_name: mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: laminas
+            MYSQL_PASSWORD: root
+        ports:
+            - 3307:3306
+        networks:
+            - laminas_network
+        volumes:
+            - mysql_data:/var/lib/mysql
+
 volumes:
-  mysql_data:
+    laminas_nginx_logs:
+    laminas_php_logs:
+    mysql_data:

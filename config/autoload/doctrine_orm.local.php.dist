@@ -6,11 +6,11 @@ return [
             'orm_default' => [
                 'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
                 'params' => [
-                    'host' => 'host',
+                    'host' => 'mysql',
                     'port' => '3306',
-                    'user' => 'user',
-                    'password' => 'password',
-                    'dbname' => 'dbname',
+                    'user' => 'root',
+                    'password' => 'root',
+                    'dbname' => 'laminas',
                     'driverOptions' => [
                         PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"
                     ]
